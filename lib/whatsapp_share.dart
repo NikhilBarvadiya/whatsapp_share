@@ -19,8 +19,7 @@ class WhatsappShare {
   static Future<bool?> isInstalled({Package package = Package.whatsapp}) async {
     String _package;
     _package = package.index == 0 ? "com.whatsapp" : "com.whatsapp.w4b";
-    final bool? success =
-        await _channel.invokeMethod('isInstalled', <String, dynamic>{
+    final bool? success = await _channel.invokeMethod('isInstalled', <String, dynamic>{
       "package": _package,
     });
     return success;
@@ -42,8 +41,7 @@ class WhatsappShare {
     String _package;
     _package = package.index == 0 ? "com.whatsapp" : "com.whatsapp.w4b";
 
-    final bool? success =
-        await _channel.invokeMethod('share', <String, dynamic>{
+    final bool? success = await _channel.invokeMethod('share', <String, dynamic>{
       'title': ' ',
       'text': text,
       'linkUrl': linkUrl,
@@ -62,9 +60,7 @@ class WhatsappShare {
   static Future<bool?> shareFile({
     required List<String> filePath,
     required String phone,
-    @Deprecated(
-        "No support for text along with files, this field is ignored")
-    String? text,
+    @Deprecated("No support for text along with files, this field is ignored") String? text,
     Package package = Package.whatsapp,
   }) async {
     assert(filePath.isNotEmpty);
@@ -79,8 +75,7 @@ class WhatsappShare {
     String _package;
     _package = package.index == 0 ? "com.whatsapp" : "com.whatsapp.w4b";
 
-    final bool? success =
-        await _channel.invokeMethod('shareFile', <String, dynamic>{
+    final bool? success = await _channel.invokeMethod('shareFile', <String, dynamic>{
       'title': ' ',
       'text': ' ',
       'filePath': filePath,

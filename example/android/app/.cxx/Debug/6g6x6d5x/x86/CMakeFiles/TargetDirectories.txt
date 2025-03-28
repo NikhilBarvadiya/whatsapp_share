@@ -1,0 +1,2 @@
+D:/Fastwhitsle_Applications/whatsapp_share/example/android/app/.cxx/Debug/6g6x6d5x/x86/CMakeFiles/edit_cache.dir
+D:/Fastwhitsle_Applications/whatsapp_share/example/android/app/.cxx/Debug/6g6x6d5x/x86/CMakeFiles/rebuild_cache.dir
